@@ -27,17 +27,17 @@ To start the application, just run:
 make run-application
 ```
 
-This command start the Spring Boot Application in the port 8080.
+This command start the Spring Boot Application in the port 8081.
 
 The application is accessible in the url:
 
-* http://localhost:8080
+* http://localhost:8081
 
 # Important Endpoints:
 
 ## To generate the Json with data execute a POST for the url:
 
-* http://localhost:8080/generate-json-file?size=5
+* http://localhost:8081/generate-json-file?size=5
 
 The variable `size`  is the array's size that will be generated.
 
@@ -49,12 +49,12 @@ curl -i -X POST -H "Content-Type:application/json" -d '{}' http://localhost:8080
 
 ## To save the data in the Neo4J database, execute a POST command for the url:
 
-* http://localhost:8080/create
+* http://localhost:8081/create
 
 For example:
 
 ```
-curl -i -X POST http://localhost:8080/create
+curl -i -X POST http://localhost:8081/create
 ```
 
  
